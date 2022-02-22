@@ -1,0 +1,15 @@
+
+<div class = "container col-4">
+  <h2>New Task</h2>
+  <%= simple_form_for @task do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.input :completed %>
+  <%= f.submit "Submit", class: "btn btn-primary"%>
+  <% end %>
+  <br>
+  <br>
+   <div class="btn btn-primary">
+    <%= link_to "Back to tasks", tasks_path(@task), class: "text-white text-decoration-none"%>
+  </div>
+</div>

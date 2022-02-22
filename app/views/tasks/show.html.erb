@@ -1,0 +1,16 @@
+
+<div class="container col-4 mt-4">
+  <div class="btn btn-primary">
+    <%= link_to "Edit the task", edit_task_path(@task), class: "text-white text-decoration-none" %>
+  </div>
+<br>
+<br>
+<br>
+  <h2 class="p-2 bg-light border"><%= @task.title %></h2>
+  <p class="p-2 bg-light border"><%= @task.details %></p>
+  <p class="p-2 bg-light border"><%= @task.completed %></p>
+
+  <div class="btn btn-primary">
+    <%= link_to "Back to Tasks", tasks_path, class: "text-white text-decoration-none"%>
+  </div>
+</div>
